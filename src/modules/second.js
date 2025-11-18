@@ -7,14 +7,12 @@ const second = () => {
     cartBtn.addEventListener('click', () => {
         postData().then((json) => {
             console.log(json);
+
+            getData().then((json) => {
+                console.log(json)
+            });
         });
     });
-
-    // cartBtn.addEventListener('click', () => {
-    //     getData().then((json) => {
-    //         console.log(json);
-    //     });
-    // });
 };
 
 export default second;
